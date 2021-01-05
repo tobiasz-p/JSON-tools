@@ -17,20 +17,6 @@ public class TextTransformerController {
     private static final Logger logger = LoggerFactory.getLogger(TextTransformerController.class);
     private JsonDecorator json;
 
-/*    @GetMapping(produces = "application/json")
-    @ResponseBody
-    public String get(@PathVariable String text,
-                              @RequestParam(value="transforms", defaultValue="upper,escape") String[] transforms) {
-
-        // log the parameters
-        logger.debug(text);
-        logger.debug(Arrays.toString(transforms));
-
-        // perform the transformation, you should run your logic here, below is just a silly example
-        TextTransformer transformer = new TextTransformer(transforms);
-        return transformer.transform(text);
-    }*/
-
     @PostMapping(path = "/minify", consumes = "application/json", produces = "text/plain")
     public String minify(@RequestBody String pBody) throws IOException {
         json = new JsonMinifier(pBody);
