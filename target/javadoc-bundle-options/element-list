@@ -2,7 +2,6 @@ module:java.base
 java.io
 java.lang
 java.lang.annotation
-java.lang.constant
 java.lang.invoke
 java.lang.module
 java.lang.ref
@@ -132,7 +131,6 @@ javax.naming
 javax.naming.directory
 javax.naming.event
 javax.naming.ldap
-javax.naming.ldap.spi
 javax.naming.spi
 module:java.net.http
 java.net.http
