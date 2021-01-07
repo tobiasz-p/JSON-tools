@@ -1,6 +1,4 @@
-package pl.put.poznan.transformer.logic.decorator;
-
-import pl.put.poznan.transformer.logic.Json;
+package pl.put.poznan.transformer.logic;
 
 public class JsonInput extends Json {
 

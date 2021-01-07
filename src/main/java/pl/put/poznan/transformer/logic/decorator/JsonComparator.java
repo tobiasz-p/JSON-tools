@@ -6,7 +6,6 @@ import com.fasterxml.jackson.databind.ObjectMapper;
 import com.flipkart.zjsonpatch.DiffFlags;
 import com.flipkart.zjsonpatch.JsonDiff;
 
-
 import java.io.IOException;
 import java.util.ArrayList;
 import java.util.EnumSet;
@@ -25,9 +24,8 @@ public class JsonComparator extends JsonDecorator{
     public String transform() throws JsonProcessingException {
         try{
             JsonPrettifier jsonPrettifier = new JsonPrettifier(this.input);
-            jsonArray = split(this.input);
+            jsonArray = split();
             EnumSet<DiffFlags> flags = DiffFlags.dontNormalizeOpIntoMoveAndCopy().clone();
-            ObjectMapper objectMapper = new ObjectMapper();
             JsonNode patch = JsonDiff.asJson(jsonArray.get(0), jsonArray.get(1), flags);
             String diffs = patch.toString();
             String output = "Your JSONs:" +
@@ -39,14 +37,12 @@ public class JsonComparator extends JsonDecorator{
             return output;
         } catch (IOException e){
             e.printStackTrace();
-
         }
         return null;
     }
 
-    private List<JsonNode> split(final String jsonArray) throws IOException {
-        final JsonNode jsonNode = new ObjectMapper().readTree(jsonArray);
-        return StreamSupport.stream(jsonNode.spliterator(), false) // Stream
+    private List<JsonNode> split() throws IOException {
+        return StreamSupport.stream(this.jsonNode.spliterator(), false) // Stream
                 .collect(Collectors.toList()); // and collect as a List
     }
 }
