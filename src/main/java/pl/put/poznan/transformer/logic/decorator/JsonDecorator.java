@@ -1,12 +1,13 @@
-package pl.put.poznan.transformer.logic;
+package pl.put.poznan.transformer.logic.decorator;
 
 import com.fasterxml.jackson.core.JsonProcessingException;
 import com.fasterxml.jackson.databind.JsonNode;
 import com.fasterxml.jackson.databind.ObjectMapper;
+import pl.put.poznan.transformer.logic.Json;
 
 import java.io.IOException;
 
-public abstract class JsonDecorator extends Json{
+public abstract class JsonDecorator extends Json {
     protected JsonNode jsonNode;
     protected String input;
 

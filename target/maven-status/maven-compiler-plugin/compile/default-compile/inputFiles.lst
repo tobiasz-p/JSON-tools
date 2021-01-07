@@ -1,3 +1,7 @@
-/Users/mochodek/Documents/Dydaktyka/Wyklady/IO/Laboratory classes/projekt/ioprojectarchitecture/src/main/java/pl/put/poznan/transformer/app/TextTransformerApplication.java
-/Users/mochodek/Documents/Dydaktyka/Wyklady/IO/Laboratory classes/projekt/ioprojectarchitecture/src/main/java/pl/put/poznan/transformer/logic/TextTransformer.java
-/Users/mochodek/Documents/Dydaktyka/Wyklady/IO/Laboratory classes/projekt/ioprojectarchitecture/src/main/java/pl/put/poznan/transformer/rest/TextTransformerController.java
+E:\Studia\Sem5\IO\JSON-tools\src\main\java\pl\put\poznan\transformer\rest\TextTransformerController.java
+E:\Studia\Sem5\IO\JSON-tools\src\main\java\pl\put\poznan\transformer\app\TextTransformerApplication.java
+E:\Studia\Sem5\IO\JSON-tools\src\main\java\pl\put\poznan\transformer\logic\JsonPrettifier.java
+E:\Studia\Sem5\IO\JSON-tools\src\main\java\pl\put\poznan\transformer\logic\Json.java
+E:\Studia\Sem5\IO\JSON-tools\src\main\java\pl\put\poznan\transformer\logic\JsonDecorator.java
+E:\Studia\Sem5\IO\JSON-tools\src\main\java\pl\put\poznan\transformer\logic\JsonInput.java
+E:\Studia\Sem5\IO\JSON-tools\src\main\java\pl\put\poznan\transformer\logic\JsonMinifier.java

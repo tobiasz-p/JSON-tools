@@ -1,0 +1,7 @@
+pl\put\poznan\transformer\logic\Json.class
+pl\put\poznan\transformer\logic\JsonPrettifier.class
+pl\put\poznan\transformer\logic\JsonDecorator.class
+pl\put\poznan\transformer\app\TextTransformerApplication.class
+pl\put\poznan\transformer\logic\JsonInput.class
+pl\put\poznan\transformer\logic\JsonMinifier.class
+pl\put\poznan\transformer\rest\TextTransformerController.class
