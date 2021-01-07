@@ -31,14 +31,15 @@ public class JsonComparator extends JsonDecorator{
             JsonNode patch = JsonDiff.asJson(jsonArray.get(0), jsonArray.get(1), flags);
             String diffs = patch.toString();
             String output = "Your JSONs:" +
-                            "\n----------------------------------------------------------\n" +
+                            "\n-----------------------------------------------------------\n" +
                             jsonPrettifier.transform() +
-                            "\n----------------------------------------------------------\n" +
+                            "\n-----------------------------------------------------------\n" +
                             "\nDifferences:\n" +
                             diffs;
             return output;
         } catch (IOException e){
             e.printStackTrace();
+
         }
         return null;
     }
