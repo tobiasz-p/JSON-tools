@@ -3,7 +3,7 @@ package pl.put.poznan.transformer.logic.decorator;
 import com.fasterxml.jackson.core.JsonProcessingException;
 
 /**
- * JsonMinifier class minifies output by removing whitespaces.
+ * JsonMinifier class minifies output by removing whitespaces
  */
 public class JsonMinifier extends JsonDecorator {
 
