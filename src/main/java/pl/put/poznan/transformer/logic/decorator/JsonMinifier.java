@@ -10,7 +10,7 @@ public class JsonMinifier extends JsonDecorator {
     /**
      * JsonMinifier class constructor
      * @param input input JSON string
-     * @throws JsonProcessingException
+     * @throws JsonProcessingException input jsonString is invalid
      */
     public JsonMinifier(String input) throws JsonProcessingException { super(input); }
 

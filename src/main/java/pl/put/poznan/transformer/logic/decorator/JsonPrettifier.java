@@ -9,7 +9,7 @@ public class JsonPrettifier extends JsonDecorator {
     /**
      * JsonPrettifier class constructor
      * @param input input JSON string
-     * @throws JsonProcessingException
+     * @throws JsonProcessingException input jsonString is invalid
      */
     public JsonPrettifier(String input) throws JsonProcessingException { super(input); }
 
