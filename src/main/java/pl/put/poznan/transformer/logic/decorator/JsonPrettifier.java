@@ -2,7 +2,7 @@ package pl.put.poznan.transformer.logic.decorator;
 
 import com.fasterxml.jackson.core.JsonProcessingException;
 /**
- * JsonPrettifier class prettify output by adding whitespaces.
+ * JsonPrettifier class prettify output by adding whitespaces
  */
 public class JsonPrettifier extends JsonDecorator {
 
