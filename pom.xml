@@ -13,7 +13,7 @@
 
     <groupId>pl.put.poznan</groupId>
     <artifactId>JSON-tools</artifactId>
-    <version>0.2.0</version>
+    <version>0.2.1</version>
 
 	<properties>
         <java.version>11</java.version>
