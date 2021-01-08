@@ -4,4 +4,7 @@ Aplikacja dla programistów, którzy potrzebują przeformatować lub filtrować 
 # Dokumentacja  
 Dokumentacja projektu znajduje się na [Github Pages](https://tobiasz-p.github.io/JSON-tools/) i generuje się w sposób automatyczny.
 
+# Diagram UML
+![text](uml.png)
+
 #### [Punktowanie sprintów](https://docs.google.com/spreadsheets/d/e/2PACX-1vQndYCJCWd-LgB0E3TjUa2sMFUaV2M-3plaVgLB61xtYDLnorXlL9trQWuSvEYVByVTUqGMZVzwPiEJ/pubhtml#)
