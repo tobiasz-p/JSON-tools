@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Diagram>
+  <ID>JAVA</ID>
+  <OriginalElement>pl.put.poznan.transformer.logic</OriginalElement>
+  <nodes>
+    <node x="0.0" y="276.0">pl.put.poznan.transformer.logic.decorator.JsonComparator</node>
+    <node x="202.5" y="104.0">pl.put.poznan.transformer.logic.decorator.JsonDecorator</node>
+    <node x="208.0" y="298.5">pl.put.poznan.transformer.logic.decorator.JsonMinifier</node>
+    <node x="388.5" y="138.0">pl.put.poznan.transformer.logic.JsonInput</node>
+    <node x="383.0" y="298.5">pl.put.poznan.transformer.logic.decorator.JsonPrettifier</node>
+    <node x="301.25" y="0.0">pl.put.poznan.transformer.logic.Json</node>
+  </nodes>
+  <notes />
+  <edges>
+    <edge source="pl.put.poznan.transformer.logic.decorator.JsonMinifier" target="pl.put.poznan.transformer.logic.decorator.JsonDecorator">
+      <point x="0.0" y="-38.5" />
+      <point x="0.0" y="61.0" />
+    </edge>
+    <edge source="pl.put.poznan.transformer.logic.JsonInput" target="pl.put.poznan.transformer.logic.Json">
+      <point x="0.0" y="-27.0" />
+      <point x="460.0" y="79.0" />
+      <point x="408.5" y="79.0" />
+      <point x="35.75" y="27.0" />
+    </edge>
+    <edge source="pl.put.poznan.transformer.logic.decorator.JsonComparator" target="pl.put.poznan.transformer.logic.decorator.JsonDecorator">
+      <point x="0.0" y="-61.0" />
+      <point x="94.0" y="251.0" />
+      <point x="230.16666666666669" y="251.0" />
+      <point x="-55.33333333333334" y="61.0" />
+    </edge>
+    <edge source="pl.put.poznan.transformer.logic.decorator.JsonPrettifier" target="pl.put.poznan.transformer.logic.decorator.JsonDecorator">
+      <point x="0.0" y="-38.5" />
+      <point x="463.0" y="251.0" />
+      <point x="340.83333333333337" y="251.0" />
+      <point x="55.33333333333337" y="61.0" />
+    </edge>
+    <edge source="pl.put.poznan.transformer.logic.decorator.JsonDecorator" target="pl.put.poznan.transformer.logic.Json">
+      <point x="0.0" y="-61.0" />
+      <point x="285.5" y="79.0" />
+      <point x="337.0" y="79.0" />
+      <point x="-35.75" y="27.0" />
+    </edge>
+  </edges>
+  <settings layout="Hierarchic Group" zoom="1.0" x="165.5" y="79.0" />
+  <SelectedNodes />
+  <Categories>
+    <Category>Fields</Category>
+    <Category>Constructors</Category>
+    <Category>Methods</Category>
+    <Category>Properties</Category>
+    <Category>Inner Classes</Category>
+  </Categories>
+  <SCOPE>All</SCOPE>
+  <VISIBILITY>private</VISIBILITY>
+</Diagram>
+
