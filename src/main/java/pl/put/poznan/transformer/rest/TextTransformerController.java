@@ -2,10 +2,7 @@ package pl.put.poznan.transformer.rest;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.web.bind.annotation.*;
-import pl.put.poznan.transformer.logic.decorator.JsonComparator;
-import pl.put.poznan.transformer.logic.decorator.JsonDecorator;
-import pl.put.poznan.transformer.logic.decorator.JsonMinifier;
-import pl.put.poznan.transformer.logic.decorator.JsonPrettifier;
+import pl.put.poznan.transformer.logic.decorator.*;
 
 
 import java.io.IOException;
@@ -31,6 +28,11 @@ public class TextTransformerController {
     @PostMapping(path = "/compare", consumes = "application/json", produces = "text/plain")
     public String compare(@RequestBody String pBody) throws IOException {
         json = new JsonComparator(pBody);
+        return json.transform();
+    }
+    @PostMapping(path = "/filter/{filter}", consumes = "application/json", produces = "text/plain")
+    public String filterWithKeys(@RequestBody String pBody, @PathVariable String filter) throws IOException {
+        json = new JsonFilter(pBody, filter);
         return json.transform();
     }
 }
