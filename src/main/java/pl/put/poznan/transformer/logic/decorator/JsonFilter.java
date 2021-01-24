@@ -6,7 +6,7 @@ import com.github.bohnman.squiggly.Squiggly;
 import com.github.bohnman.squiggly.util.SquigglyUtils;
 
 
-public class JsonFilter extends JsonDecorator{
+public class JsonFilter extends JsonDecorator {
     String filter;
 
 
