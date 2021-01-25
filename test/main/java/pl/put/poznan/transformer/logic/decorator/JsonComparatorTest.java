@@ -32,36 +32,10 @@ import static org.junit.jupiter.api.Assertions.*;
 
     }
 
-     @Test
-    void JsonComparatorTest() throws JsonProcessingException {
-        String expected1="Your JSONs:\n" +
-                "-----------------------------------------------------------\n" +
-                "[ {\n" +
-                "  \"name\" : \"Json\",\n" +
-                "  \"age\" : 17\n" +
-                "}, {\n" +
-                "  \"name\" : \"Test\",\n" +
-                "  \"age\" : \"17\"\n" +
-                "} ]\n" +
-                "-----------------------------------------------------------\n" +
-                "\n" +
-                "Differences:\n" +
-                "[{\"op\":\"replace\",\"path\":\"/name\",\"value\":\"Test\"},{\"op\":\"replace\",\"path\":\"/age\",\"value\":\"17\"}]";
 
-        JsonComparator test_obj=new JsonComparator("[{\n" +
-                "    \"name\": \"Json\",\n" +
-                "    \"age\": 17\n" +
-                "},\n" +
-                "{\n" +
-                "    \"name\": \"Test\",\n" +
-                "    \"age\": \"17\"\n" +
-                "}]");
-        assertEquals(expected1, test_obj.transform());
-
-    }
 
     @Test
-    public void compare() throws JsonProcessingException {
+    public void JsonComparatorTest() throws JsonProcessingException {
         String expected1=String.join("\r\n","Your JSONs:" ,
                 "-----------------------------------------------------------" ,
                 "[ {" ,
@@ -76,14 +50,14 @@ import static org.junit.jupiter.api.Assertions.*;
                 "Differences:" ,
                 "[{\"op\":\"replace\",\"path\":\"/name\",\"value\":\"Test\"},{\"op\":\"replace\",\"path\":\"/age\",\"value\":\"17\"}]");
 
-        JsonComparator test_obj=new JsonComparator("[{\n" +
-                "    \"name\": \"Json\",\n" +
-                "    \"age\": 17\n" +
-                "},\n" +
-                "{\n" +
-                "    \"name\": \"Test\",\n" +
-                "    \"age\": \"17\"\n" +
-                "}]");
+        JsonComparator test_obj=new JsonComparator(String.join("\n","[{" ,
+                "    \"name\": \"Json\"," ,
+                "    \"age\": 17" ,
+                "}," ,
+                "{" ,
+                "    \"name\": \"Test\"," ,
+                "    \"age\": \"17\"" ,
+                "}]"));
         try {
             assertEquals(expected1, test_obj.transform());
         } catch (JsonProcessingException e) {
