@@ -35,8 +35,8 @@ import static org.junit.jupiter.api.Assertions.*;
 
 
     @Test
-    public void JsonComparatorTest() throws JsonProcessingException {
-        String expected1=String.join("\r\n","Your JSONs:" ,
+    public void JsonComparatorTest()  {
+        String expected1=String.join("\n","Your JSONs:" ,
                 "-----------------------------------------------------------" ,
                 "[ {" ,
                 "  \"name\" : \"Json\"," ,
@@ -49,16 +49,15 @@ import static org.junit.jupiter.api.Assertions.*;
                 "" ,
                 "Differences:" ,
                 "[{\"op\":\"replace\",\"path\":\"/name\",\"value\":\"Test\"},{\"op\":\"replace\",\"path\":\"/age\",\"value\":\"17\"}]");
-
-        JsonComparator test_obj=new JsonComparator(String.join("\n","[{" ,
-                "    \"name\": \"Json\"," ,
-                "    \"age\": 17" ,
-                "}," ,
-                "{" ,
-                "    \"name\": \"Test\"," ,
-                "    \"age\": \"17\"" ,
-                "}]"));
         try {
+        JsonComparator test_obj=new JsonComparator(String.join("\r\n","[{" ,
+                "\"name\": \"Json\"," ,
+                "\"age\": 17" ,
+                "},{" ,
+                "\"name\": \"Test\"," ,
+                "\"age\": \"17\"" ,
+                "}]"));
+
             assertEquals(expected1, test_obj.transform());
         } catch (JsonProcessingException e) {
             e.printStackTrace();
