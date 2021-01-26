@@ -2,27 +2,17 @@ package main.java.pl.put.poznan.transformer.logic.decorator;
 
 import com.fasterxml.jackson.core.JsonProcessingException;
 import com.fasterxml.jackson.databind.JsonNode;
-import com.fasterxml.jackson.databind.ObjectMapper;
-import com.flipkart.zjsonpatch.DiffFlags;
-import com.flipkart.zjsonpatch.JsonDiff;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 import pl.put.poznan.transformer.logic.decorator.JsonComparator;
-import pl.put.poznan.transformer.logic.decorator.JsonDecorator;
-import pl.put.poznan.transformer.logic.decorator.JsonPrettifier;
 
-import java.io.IOException;
 import java.util.ArrayList;
-import java.util.EnumSet;
 import java.util.List;
-import java.util.stream.Collectors;
-import java.util.stream.StreamSupport;
 
-import org.junit.jupiter.api.BeforeEach;
-import org.junit.jupiter.api.Test;
-import static org.junit.jupiter.api.Assertions.*;
+import static org.assertj.core.api.Assertions.assertThat;
+import static org.junit.jupiter.api.Assertions.fail;
 
- class JsonComparatorTest  {
+class JsonComparatorTest  {
     private List<JsonNode> jsonArray = new ArrayList<>();
     //JsonComparator test_obj=new JsonComparator();
 
@@ -36,41 +26,41 @@ import static org.junit.jupiter.api.Assertions.*;
 
     @Test
     public void JsonComparatorTest()  {
-        String expected1=String.join("\n","Your JSONs:" ,
-                "-----------------------------------------------------------" ,
+        String expected = String.join("\n","Your JSONs:",
+                "-----------------------------------------------------------",
                 "[ {" ,
-                "  \"name\" : \"Json\"," ,
-                "  \"age\" : 17" ,
+                "  \"name\" : \"Json\",",
+                "  \"age\" : 17",
                 "}, {" ,
-                "  \"name\" : \"Test\"," ,
-                "  \"age\" : \"17\"" ,
-                "} ]" ,
-                "-----------------------------------------------------------" ,
-                "" ,
-                "Differences:" ,
-                "[{\"op\":\"replace\",\"path\":\"/name\",\"value\":\"Test\"},{\"op\":\"replace\",\"path\":\"/age\",\"value\":\"17\"}]");
+                "  \"name\" : \"Test\",",
+                "  \"age\" : 17",
+                "} ]",
+                "-----------------------------------------------------------",
+                "\nDifferences:",
+                "[{\"op\":\"replace\",\"path\":\"/name\",\"value\":\"Test\"}]");
         try {
-        JsonComparator test_obj=new JsonComparator(String.join("\r\n","[{" ,
-                "\"name\": \"Json\"," ,
-                "\"age\": 17" ,
-                "},{" ,
-                "\"name\": \"Test\"," ,
-                "\"age\": \"17\"" ,
-                "}]"));
+            String input = "[{\"name\":\"Json\",\"age\":17},{\"name\":\"Test\",\"age\":17}]";
 
-            assertEquals(expected1, test_obj.transform());
+            JsonComparator jsonComparator = new JsonComparator(input);
+            assertThat(expected).isEqualToNormalizingNewlines(jsonComparator.transform());
+
         } catch (JsonProcessingException e) {
             e.printStackTrace();
             fail();
         }
     }
 
+
     @Test
     void transformTest()  {
 
     }
+
+
     @Test
     void splitTest()  {
 
     }
+
+
 }
