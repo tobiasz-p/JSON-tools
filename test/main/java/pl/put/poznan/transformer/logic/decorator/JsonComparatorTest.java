@@ -26,6 +26,12 @@ class JsonComparatorTest  {
 
     @Test
     public void JsonComparatorTest()  {
+
+    }
+
+
+    @Test
+    void transformTest()  {
         String expected = String.join("\n","Your JSONs:",
                 "-----------------------------------------------------------",
                 "[ {" ,
@@ -48,11 +54,6 @@ class JsonComparatorTest  {
             e.printStackTrace();
             fail();
         }
-    }
-
-
-    @Test
-    void transformTest()  {
 
     }
 
