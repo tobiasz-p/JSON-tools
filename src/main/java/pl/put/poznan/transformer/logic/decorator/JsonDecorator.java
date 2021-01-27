@@ -22,6 +22,9 @@ public abstract class JsonDecorator extends Json {
             }
         }
 
+    protected JsonDecorator() {
+    }
+
     @Override
     public abstract String transform() throws JsonProcessingException;
 }

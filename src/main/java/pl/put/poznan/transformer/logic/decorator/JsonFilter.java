@@ -18,8 +18,8 @@ public class JsonFilter extends JsonDecorator {
 
     @Override
     public String transform() throws JsonProcessingException {
-        Object object = new ObjectMapper().treeToValue(jsonNode, Object.class);
-        ObjectMapper objectMapper = Squiggly.init(new ObjectMapper(), filter);
+        Object object = new ObjectMapper().treeToValue(this.jsonNode, Object.class);
+        ObjectMapper objectMapper = Squiggly.init(new ObjectMapper(), this.filter);
         return SquigglyUtils.stringify(objectMapper, object);
     }
 
