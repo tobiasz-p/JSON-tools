@@ -2,7 +2,7 @@
 @options
 @packages
 -classpath
-'/home/runner/.m2/repository/org/springframework/boot/spring-boot-starter-web/2.3.3.RELEASE/spring-boot-starter-web-2.3.3.RELEASE.jar:/home/runner/.m2/repository/org/springframework/boot/spring-boot-starter/2.3.3.RELEASE/spring-boot-starter-2.3.3.RELEASE.jar:/home/runner/.m2/repository/org/springframework/boot/spring-boot/2.3.3.RELEASE/spring-boot-2.3.3.RELEASE.jar:/home/runner/.m2/repository/org/springframework/boot/spring-boot-autoconfigure/2.3.3.RELEASE/spring-boot-autoconfigure-2.3.3.RELEASE.jar:/home/runner/.m2/repository/org/springframework/boot/spring-boot-starter-logging/2.3.3.RELEASE/spring-boot-starter-logging-2.3.3.RELEASE.jar:/home/runner/.m2/repository/ch/qos/logback/logback-classic/1.2.3/logback-classic-1.2.3.jar:/home/runner/.m2/repository/ch/qos/logback/logback-core/1.2.3/logback-core-1.2.3.jar:/home/runner/.m2/repository/org/apache/logging/log4j/log4j-to-slf4j/2.13.3/log4j-to-slf4j-2.13.3.jar:/home/runner/.m2/repository/org/apache/logging/log4j/log4j-api/2.13.3/log4j-api-2.13.3.jar:/home/runner/.m2/repository/org/slf4j/jul-to-slf4j/1.7.30/jul-to-slf4j-1.7.30.jar:/home/runner/.m2/repository/jakarta/annotation/jakarta.annotation-api/1.3.5/jakarta.annotation-api-1.3.5.jar:/home/runner/.m2/repository/org/yaml/snakeyaml/1.26/snakeyaml-1.26.jar:/home/runner/.m2/repository/org/springframework/boot/spring-boot-starter-json/2.3.3.RELEASE/spring-boot-starter-json-2.3.3.RELEASE.jar:/home/runner/.m2/repository/com/fasterxml/jackson/datatype/jackson-datatype-jdk8/2.11.2/jackson-datatype-jdk8-2.11.2.jar:/home/runner/.m2/repository/com/fasterxml/jackson/datatype/jackson-datatype-jsr310/2.11.2/jackson-datatype-jsr310-2.11.2.jar:/home/runner/.m2/repository/com/fasterxml/jackson/module/jackson-module-parameter-names/2.11.2/jackson-module-parameter-names-2.11.2.jar:/home/runner/.m2/repository/org/springframework/boot/spring-boot-starter-tomcat/2.3.3.RELEASE/spring-boot-starter-tomcat-2.3.3.RELEASE.jar:/home/runner/.m2/repository/org/apache/tomcat/embed/tomcat-embed-core/9.0.37/tomcat-embed-core-9.0.37.jar:/home/runner/.m2/repository/org/glassfish/jakarta.el/3.0.3/jakarta.el-3.0.3.jar:/home/runner/.m2/repository/org/apache/tomcat/embed/tomcat-embed-websocket/9.0.37/tomcat-embed-websocket-9.0.37.jar:/home/runner/.m2/repository/org/springframework/spring-web/5.2.8.RELEASE/spring-web-5.2.8.RELEASE.jar:/home/runner/.m2/repository/org/springframework/spring-beans/5.2.8.RELEASE/spring-beans-5.2.8.RELEASE.jar:/home/runner/.m2/repository/org/springframework/spring-webmvc/5.2.8.RELEASE/spring-webmvc-5.2.8.RELEASE.jar:/home/runner/.m2/repository/org/springframework/spring-aop/5.2.8.RELEASE/spring-aop-5.2.8.RELEASE.jar:/home/runner/.m2/repository/org/springframework/spring-context/5.2.8.RELEASE/spring-context-5.2.8.RELEASE.jar:/home/runner/.m2/repository/org/springframework/spring-expression/5.2.8.RELEASE/spring-expression-5.2.8.RELEASE.jar:/home/runner/.m2/repository/jakarta/xml/bind/jakarta.xml.bind-api/2.3.3/jakarta.xml.bind-api-2.3.3.jar:/home/runner/.m2/repository/jakarta/activation/jakarta.activation-api/1.2.2/jakarta.activation-api-1.2.2.jar:/home/runner/.m2/repository/org/springframework/spring-core/5.2.8.RELEASE/spring-core-5.2.8.RELEASE.jar:/home/runner/.m2/repository/org/springframework/spring-jcl/5.2.8.RELEASE/spring-jcl-5.2.8.RELEASE.jar:/home/runner/.m2/repository/org/slf4j/slf4j-api/1.7.30/slf4j-api-1.7.30.jar:/home/runner/.m2/repository/com/flipkart/zjsonpatch/zjsonpatch/0.4.11/zjsonpatch-0.4.11.jar:/home/runner/.m2/repository/com/fasterxml/jackson/core/jackson-databind/2.11.2/jackson-databind-2.11.2.jar:/home/runner/.m2/repository/com/fasterxml/jackson/core/jackson-core/2.11.2/jackson-core-2.11.2.jar:/home/runner/.m2/repository/org/apache/commons/commons-collections4/4.2/commons-collections4-4.2.jar:/home/runner/.m2/repository/com/github/bohnman/squiggly-filter-jackson/1.3.18/squiggly-filter-jackson-1.3.18.jar:/home/runner/.m2/repository/org/antlr/antlr4-runtime/4.6/antlr4-runtime-4.6.jar:/home/runner/.m2/repository/org/apache/commons/commons-lang3/3.10/commons-lang3-3.10.jar:/home/runner/.m2/repository/com/google/guava/guava/19.0/guava-19.0.jar:/home/runner/.m2/repository/commons-beanutils/commons-beanutils/1.9.3/commons-beanutils-1.9.3.jar:/home/runner/.m2/repository/commons-logging/commons-logging/1.2/commons-logging-1.2.jar:/home/runner/.m2/repository/commons-collections/commons-collections/3.2.2/commons-collections-3.2.2.jar:/home/runner/.m2/repository/net/jcip/jcip-annotations/1.0/jcip-annotations-1.0.jar:/home/runner/.m2/repository/com/fasterxml/jackson/dataformat/jackson-dataformat-xml/2.11.1/jackson-dataformat-xml-2.11.1.jar:/home/runner/.m2/repository/com/fasterxml/jackson/core/jackson-annotations/2.11.2/jackson-annotations-2.11.2.jar:/home/runner/.m2/repository/com/fasterxml/jackson/module/jackson-module-jaxb-annotations/2.11.2/jackson-module-jaxb-annotations-2.11.2.jar:/home/runner/.m2/repository/org/codehaus/woodstox/stax2-api/4.2.1/stax2-api-4.2.1.jar:/home/runner/.m2/repository/com/fasterxml/woodstox/woodstox-core/6.2.1/woodstox-core-6.2.1.jar:/home/runner/.m2/repository/org/json/json/20160212/json-20160212.jar'
+'/home/runner/.m2/repository/org/springframework/boot/spring-boot-starter-web/2.3.3.RELEASE/spring-boot-starter-web-2.3.3.RELEASE.jar:/home/runner/.m2/repository/org/springframework/boot/spring-boot-starter/2.3.3.RELEASE/spring-boot-starter-2.3.3.RELEASE.jar:/home/runner/.m2/repository/org/springframework/boot/spring-boot/2.3.3.RELEASE/spring-boot-2.3.3.RELEASE.jar:/home/runner/.m2/repository/org/springframework/boot/spring-boot-autoconfigure/2.3.3.RELEASE/spring-boot-autoconfigure-2.3.3.RELEASE.jar:/home/runner/.m2/repository/org/springframework/boot/spring-boot-starter-logging/2.3.3.RELEASE/spring-boot-starter-logging-2.3.3.RELEASE.jar:/home/runner/.m2/repository/ch/qos/logback/logback-classic/1.2.3/logback-classic-1.2.3.jar:/home/runner/.m2/repository/ch/qos/logback/logback-core/1.2.3/logback-core-1.2.3.jar:/home/runner/.m2/repository/org/apache/logging/log4j/log4j-to-slf4j/2.13.3/log4j-to-slf4j-2.13.3.jar:/home/runner/.m2/repository/org/apache/logging/log4j/log4j-api/2.13.3/log4j-api-2.13.3.jar:/home/runner/.m2/repository/org/slf4j/jul-to-slf4j/1.7.30/jul-to-slf4j-1.7.30.jar:/home/runner/.m2/repository/jakarta/annotation/jakarta.annotation-api/1.3.5/jakarta.annotation-api-1.3.5.jar:/home/runner/.m2/repository/org/yaml/snakeyaml/1.26/snakeyaml-1.26.jar:/home/runner/.m2/repository/org/springframework/boot/spring-boot-starter-json/2.3.3.RELEASE/spring-boot-starter-json-2.3.3.RELEASE.jar:/home/runner/.m2/repository/com/fasterxml/jackson/datatype/jackson-datatype-jdk8/2.11.2/jackson-datatype-jdk8-2.11.2.jar:/home/runner/.m2/repository/com/fasterxml/jackson/datatype/jackson-datatype-jsr310/2.11.2/jackson-datatype-jsr310-2.11.2.jar:/home/runner/.m2/repository/com/fasterxml/jackson/module/jackson-module-parameter-names/2.11.2/jackson-module-parameter-names-2.11.2.jar:/home/runner/.m2/repository/org/springframework/boot/spring-boot-starter-tomcat/2.3.3.RELEASE/spring-boot-starter-tomcat-2.3.3.RELEASE.jar:/home/runner/.m2/repository/org/apache/tomcat/embed/tomcat-embed-core/9.0.37/tomcat-embed-core-9.0.37.jar:/home/runner/.m2/repository/org/glassfish/jakarta.el/3.0.3/jakarta.el-3.0.3.jar:/home/runner/.m2/repository/org/apache/tomcat/embed/tomcat-embed-websocket/9.0.37/tomcat-embed-websocket-9.0.37.jar:/home/runner/.m2/repository/org/springframework/spring-web/5.2.8.RELEASE/spring-web-5.2.8.RELEASE.jar:/home/runner/.m2/repository/org/springframework/spring-beans/5.2.8.RELEASE/spring-beans-5.2.8.RELEASE.jar:/home/runner/.m2/repository/org/springframework/spring-webmvc/5.2.8.RELEASE/spring-webmvc-5.2.8.RELEASE.jar:/home/runner/.m2/repository/org/springframework/spring-aop/5.2.8.RELEASE/spring-aop-5.2.8.RELEASE.jar:/home/runner/.m2/repository/org/springframework/spring-context/5.2.8.RELEASE/spring-context-5.2.8.RELEASE.jar:/home/runner/.m2/repository/org/springframework/spring-expression/5.2.8.RELEASE/spring-expression-5.2.8.RELEASE.jar:/home/runner/.m2/repository/jakarta/xml/bind/jakarta.xml.bind-api/2.3.3/jakarta.xml.bind-api-2.3.3.jar:/home/runner/.m2/repository/jakarta/activation/jakarta.activation-api/1.2.2/jakarta.activation-api-1.2.2.jar:/home/runner/.m2/repository/org/springframework/spring-core/5.2.8.RELEASE/spring-core-5.2.8.RELEASE.jar:/home/runner/.m2/repository/org/springframework/spring-jcl/5.2.8.RELEASE/spring-jcl-5.2.8.RELEASE.jar:/home/runner/.m2/repository/org/slf4j/slf4j-api/1.7.30/slf4j-api-1.7.30.jar:/home/runner/.m2/repository/com/flipkart/zjsonpatch/zjsonpatch/0.4.11/zjsonpatch-0.4.11.jar:/home/runner/.m2/repository/com/fasterxml/jackson/core/jackson-databind/2.11.2/jackson-databind-2.11.2.jar:/home/runner/.m2/repository/com/fasterxml/jackson/core/jackson-core/2.11.2/jackson-core-2.11.2.jar:/home/runner/.m2/repository/org/apache/commons/commons-collections4/4.2/commons-collections4-4.2.jar:/home/runner/.m2/repository/com/github/bohnman/squiggly-filter-jackson/1.3.18/squiggly-filter-jackson-1.3.18.jar:/home/runner/.m2/repository/org/antlr/antlr4-runtime/4.6/antlr4-runtime-4.6.jar:/home/runner/.m2/repository/org/apache/commons/commons-lang3/3.10/commons-lang3-3.10.jar:/home/runner/.m2/repository/com/google/guava/guava/19.0/guava-19.0.jar:/home/runner/.m2/repository/commons-beanutils/commons-beanutils/1.9.3/commons-beanutils-1.9.3.jar:/home/runner/.m2/repository/commons-logging/commons-logging/1.2/commons-logging-1.2.jar:/home/runner/.m2/repository/commons-collections/commons-collections/3.2.2/commons-collections-3.2.2.jar:/home/runner/.m2/repository/net/jcip/jcip-annotations/1.0/jcip-annotations-1.0.jar:/home/runner/.m2/repository/com/fasterxml/jackson/dataformat/jackson-dataformat-xml/2.11.1/jackson-dataformat-xml-2.11.1.jar:/home/runner/.m2/repository/com/fasterxml/jackson/core/jackson-annotations/2.11.2/jackson-annotations-2.11.2.jar:/home/runner/.m2/repository/com/fasterxml/jackson/module/jackson-module-jaxb-annotations/2.11.2/jackson-module-jaxb-annotations-2.11.2.jar:/home/runner/.m2/repository/org/codehaus/woodstox/stax2-api/4.2.1/stax2-api-4.2.1.jar:/home/runner/.m2/repository/com/fasterxml/woodstox/woodstox-core/6.2.1/woodstox-core-6.2.1.jar:/home/runner/.m2/repository/org/json/json/20160212/json-20160212.jar:/home/runner/.m2/repository/com/vaadin/external/google/android-json/0.0.20131108.vaadin1/android-json-0.0.20131108.vaadin1.jar'
 -encoding
 'UTF-8'
 -protected
@@ -18,13 +18,13 @@
 -docencoding
 'UTF-8'
 -doctitle
-'JSON-tools 0.4.0 API'
+'JSON-tools 0.4.1 API'
 -linkoffline
 'https://docs.oracle.com/en/java/javase/11/docs/api' '/home/runner/work/JSON-tools/JSON-tools/target/javadoc-bundle-options'
 -use
 -version
 -windowtitle
-'JSON-tools 0.4.0 API'
+'JSON-tools 0.4.1 API'
 pl.put.poznan.transformer.logic
 pl.put.poznan.transformer.logic.decorator
 pl.put.poznan.transformer.logic.decorator
@@ -36,73 +36,74 @@ pl.put.poznan.transformer.logic.decorator
 pl.put.poznan.transformer.logic
 pl.put.poznan.transformer.app
 pl.put.poznan.transformer.rest
-/home/runner/.m2/repository/org/springframework/boot/spring-boot-starter-web/2.3.3.RELEASE/spring-boot-starter-web-2.3.3.RELEASE.jar = 1611753325388
-/home/runner/.m2/repository/org/springframework/boot/spring-boot-starter/2.3.3.RELEASE/spring-boot-starter-2.3.3.RELEASE.jar = 1611753325388
-/home/runner/.m2/repository/org/springframework/boot/spring-boot/2.3.3.RELEASE/spring-boot-2.3.3.RELEASE.jar = 1611753325572
-/home/runner/.m2/repository/org/springframework/boot/spring-boot-autoconfigure/2.3.3.RELEASE/spring-boot-autoconfigure-2.3.3.RELEASE.jar = 1611753325648
-/home/runner/.m2/repository/org/springframework/boot/spring-boot-starter-logging/2.3.3.RELEASE/spring-boot-starter-logging-2.3.3.RELEASE.jar = 1611753325416
-/home/runner/.m2/repository/ch/qos/logback/logback-classic/1.2.3/logback-classic-1.2.3.jar = 1611753326340
-/home/runner/.m2/repository/ch/qos/logback/logback-core/1.2.3/logback-core-1.2.3.jar = 1611753326552
-/home/runner/.m2/repository/org/apache/logging/log4j/log4j-to-slf4j/2.13.3/log4j-to-slf4j-2.13.3.jar = 1611753326356
-/home/runner/.m2/repository/org/apache/logging/log4j/log4j-api/2.13.3/log4j-api-2.13.3.jar = 1611753326476
-/home/runner/.m2/repository/org/slf4j/jul-to-slf4j/1.7.30/jul-to-slf4j-1.7.30.jar = 1611753326344
-/home/runner/.m2/repository/jakarta/annotation/jakarta.annotation-api/1.3.5/jakarta.annotation-api-1.3.5.jar = 1611753326360
-/home/runner/.m2/repository/org/yaml/snakeyaml/1.26/snakeyaml-1.26.jar = 1611753326432
-/home/runner/.m2/repository/org/springframework/boot/spring-boot-starter-json/2.3.3.RELEASE/spring-boot-starter-json-2.3.3.RELEASE.jar = 1611753325568
-/home/runner/.m2/repository/com/fasterxml/jackson/datatype/jackson-datatype-jdk8/2.11.2/jackson-datatype-jdk8-2.11.2.jar = 1611753326384
-/home/runner/.m2/repository/com/fasterxml/jackson/datatype/jackson-datatype-jsr310/2.11.2/jackson-datatype-jsr310-2.11.2.jar = 1611753326456
-/home/runner/.m2/repository/com/fasterxml/jackson/module/jackson-module-parameter-names/2.11.2/jackson-module-parameter-names-2.11.2.jar = 1611753326396
-/home/runner/.m2/repository/org/springframework/boot/spring-boot-starter-tomcat/2.3.3.RELEASE/spring-boot-starter-tomcat-2.3.3.RELEASE.jar = 1611753325612
-/home/runner/.m2/repository/org/apache/tomcat/embed/tomcat-embed-core/9.0.37/tomcat-embed-core-9.0.37.jar = 1611753326828
-/home/runner/.m2/repository/org/glassfish/jakarta.el/3.0.3/jakarta.el-3.0.3.jar = 1611753326520
-/home/runner/.m2/repository/org/apache/tomcat/embed/tomcat-embed-websocket/9.0.37/tomcat-embed-websocket-9.0.37.jar = 1611753326560
-/home/runner/.m2/repository/org/springframework/spring-web/5.2.8.RELEASE/spring-web-5.2.8.RELEASE.jar = 1611753325936
-/home/runner/.m2/repository/org/springframework/spring-beans/5.2.8.RELEASE/spring-beans-5.2.8.RELEASE.jar = 1611753326000
-/home/runner/.m2/repository/org/springframework/spring-webmvc/5.2.8.RELEASE/spring-webmvc-5.2.8.RELEASE.jar = 1611753325844
-/home/runner/.m2/repository/org/springframework/spring-aop/5.2.8.RELEASE/spring-aop-5.2.8.RELEASE.jar = 1611753325852
-/home/runner/.m2/repository/org/springframework/spring-context/5.2.8.RELEASE/spring-context-5.2.8.RELEASE.jar = 1611753326012
-/home/runner/.m2/repository/org/springframework/spring-expression/5.2.8.RELEASE/spring-expression-5.2.8.RELEASE.jar = 1611753325964
-/home/runner/.m2/repository/jakarta/xml/bind/jakarta.xml.bind-api/2.3.3/jakarta.xml.bind-api-2.3.3.jar = 1611753326504
-/home/runner/.m2/repository/jakarta/activation/jakarta.activation-api/1.2.2/jakarta.activation-api-1.2.2.jar = 1611753326524
-/home/runner/.m2/repository/org/springframework/spring-core/5.2.8.RELEASE/spring-core-5.2.8.RELEASE.jar = 1611753326152
-/home/runner/.m2/repository/org/springframework/spring-jcl/5.2.8.RELEASE/spring-jcl-5.2.8.RELEASE.jar = 1611753326012
-/home/runner/.m2/repository/org/slf4j/slf4j-api/1.7.30/slf4j-api-1.7.30.jar = 1611753326556
-/home/runner/.m2/repository/com/flipkart/zjsonpatch/zjsonpatch/0.4.11/zjsonpatch-0.4.11.jar = 1611753326568
-/home/runner/.m2/repository/com/fasterxml/jackson/core/jackson-databind/2.11.2/jackson-databind-2.11.2.jar = 1611753326808
-/home/runner/.m2/repository/com/fasterxml/jackson/core/jackson-core/2.11.2/jackson-core-2.11.2.jar = 1611753326668
-/home/runner/.m2/repository/org/apache/commons/commons-collections4/4.2/commons-collections4-4.2.jar = 1611753326764
-/home/runner/.m2/repository/com/github/bohnman/squiggly-filter-jackson/1.3.18/squiggly-filter-jackson-1.3.18.jar = 1611753326636
-/home/runner/.m2/repository/org/antlr/antlr4-runtime/4.6/antlr4-runtime-4.6.jar = 1611753326704
-/home/runner/.m2/repository/org/apache/commons/commons-lang3/3.10/commons-lang3-3.10.jar = 1611753326820
-/home/runner/.m2/repository/com/google/guava/guava/19.0/guava-19.0.jar = 1611753326948
-/home/runner/.m2/repository/commons-beanutils/commons-beanutils/1.9.3/commons-beanutils-1.9.3.jar = 1611753326824
-/home/runner/.m2/repository/commons-logging/commons-logging/1.2/commons-logging-1.2.jar = 1611753326856
-/home/runner/.m2/repository/commons-collections/commons-collections/3.2.2/commons-collections-3.2.2.jar = 1611753326944
-/home/runner/.m2/repository/net/jcip/jcip-annotations/1.0/jcip-annotations-1.0.jar = 1611753326840
-/home/runner/.m2/repository/com/fasterxml/jackson/dataformat/jackson-dataformat-xml/2.11.1/jackson-dataformat-xml-2.11.1.jar = 1611753326844
-/home/runner/.m2/repository/com/fasterxml/jackson/core/jackson-annotations/2.11.2/jackson-annotations-2.11.2.jar = 1611753326864
-/home/runner/.m2/repository/com/fasterxml/jackson/module/jackson-module-jaxb-annotations/2.11.2/jackson-module-jaxb-annotations-2.11.2.jar = 1611753326876
-/home/runner/.m2/repository/org/codehaus/woodstox/stax2-api/4.2.1/stax2-api-4.2.1.jar = 1611753326924
-/home/runner/.m2/repository/com/fasterxml/woodstox/woodstox-core/6.2.1/woodstox-core-6.2.1.jar = 1611753327008
-/home/runner/.m2/repository/org/json/json/20160212/json-20160212.jar = 1611753326912
-/home/runner/work/JSON-tools/JSON-tools/src/main/java = 1611753269609
-/home/runner/work/JSON-tools/JSON-tools/target/site/apidocs/type-search-index.js = 1611753352833
-/home/runner/work/JSON-tools/JSON-tools/target/site/apidocs/package-search-index.js = 1611753352829
-/home/runner/work/JSON-tools/JSON-tools/target/site/apidocs/stylesheet.css = 1611753352877
-/home/runner/work/JSON-tools/JSON-tools/target/site/apidocs/allpackages-index.html = 1611753352853
-/home/runner/work/JSON-tools/JSON-tools/target/site/apidocs/element-list = 1611753352721
-/home/runner/work/JSON-tools/JSON-tools/target/site/apidocs/allclasses.html = 1611753352857
-/home/runner/work/JSON-tools/JSON-tools/target/site/apidocs/member-search-index.zip = 1611753352833
-/home/runner/work/JSON-tools/JSON-tools/target/site/apidocs/type-search-index.zip = 1611753352833
-/home/runner/work/JSON-tools/JSON-tools/target/site/apidocs/script.js = 1611753352877
-/home/runner/work/JSON-tools/JSON-tools/target/site/apidocs/index.html = 1611753352865
-/home/runner/work/JSON-tools/JSON-tools/target/site/apidocs/package-search-index.zip = 1611753352833
-/home/runner/work/JSON-tools/JSON-tools/target/site/apidocs/search.js = 1611753352881
-/home/runner/work/JSON-tools/JSON-tools/target/site/apidocs/member-search-index.js = 1611753352833
-/home/runner/work/JSON-tools/JSON-tools/target/site/apidocs/overview-summary.html = 1611753352865
-/home/runner/work/JSON-tools/JSON-tools/target/site/apidocs/index-all.html = 1611753352833
-/home/runner/work/JSON-tools/JSON-tools/target/site/apidocs/constant-values.html = 1611753352761
-/home/runner/work/JSON-tools/JSON-tools/target/site/apidocs/deprecated-list.html = 1611753352857
-/home/runner/work/JSON-tools/JSON-tools/target/site/apidocs/help-doc.html = 1611753352869
-/home/runner/work/JSON-tools/JSON-tools/target/site/apidocs/overview-tree.html = 1611753352801
-/home/runner/work/JSON-tools/JSON-tools/target/site/apidocs/allclasses-index.html = 1611753352849
+/home/runner/.m2/repository/org/springframework/boot/spring-boot-starter-web/2.3.3.RELEASE/spring-boot-starter-web-2.3.3.RELEASE.jar = 1611754789720
+/home/runner/.m2/repository/org/springframework/boot/spring-boot-starter/2.3.3.RELEASE/spring-boot-starter-2.3.3.RELEASE.jar = 1611754789724
+/home/runner/.m2/repository/org/springframework/boot/spring-boot/2.3.3.RELEASE/spring-boot-2.3.3.RELEASE.jar = 1611754789968
+/home/runner/.m2/repository/org/springframework/boot/spring-boot-autoconfigure/2.3.3.RELEASE/spring-boot-autoconfigure-2.3.3.RELEASE.jar = 1611754789960
+/home/runner/.m2/repository/org/springframework/boot/spring-boot-starter-logging/2.3.3.RELEASE/spring-boot-starter-logging-2.3.3.RELEASE.jar = 1611754789716
+/home/runner/.m2/repository/ch/qos/logback/logback-classic/1.2.3/logback-classic-1.2.3.jar = 1611754795168
+/home/runner/.m2/repository/ch/qos/logback/logback-core/1.2.3/logback-core-1.2.3.jar = 1611754795292
+/home/runner/.m2/repository/org/apache/logging/log4j/log4j-to-slf4j/2.13.3/log4j-to-slf4j-2.13.3.jar = 1611754795172
+/home/runner/.m2/repository/org/apache/logging/log4j/log4j-api/2.13.3/log4j-api-2.13.3.jar = 1611754795276
+/home/runner/.m2/repository/org/slf4j/jul-to-slf4j/1.7.30/jul-to-slf4j-1.7.30.jar = 1611754795196
+/home/runner/.m2/repository/jakarta/annotation/jakarta.annotation-api/1.3.5/jakarta.annotation-api-1.3.5.jar = 1611754795188
+/home/runner/.m2/repository/org/yaml/snakeyaml/1.26/snakeyaml-1.26.jar = 1611754795272
+/home/runner/.m2/repository/org/springframework/boot/spring-boot-starter-json/2.3.3.RELEASE/spring-boot-starter-json-2.3.3.RELEASE.jar = 1611754789880
+/home/runner/.m2/repository/com/fasterxml/jackson/datatype/jackson-datatype-jdk8/2.11.2/jackson-datatype-jdk8-2.11.2.jar = 1611754795212
+/home/runner/.m2/repository/com/fasterxml/jackson/datatype/jackson-datatype-jsr310/2.11.2/jackson-datatype-jsr310-2.11.2.jar = 1611754795276
+/home/runner/.m2/repository/com/fasterxml/jackson/module/jackson-module-parameter-names/2.11.2/jackson-module-parameter-names-2.11.2.jar = 1611754795240
+/home/runner/.m2/repository/org/springframework/boot/spring-boot-starter-tomcat/2.3.3.RELEASE/spring-boot-starter-tomcat-2.3.3.RELEASE.jar = 1611754789940
+/home/runner/.m2/repository/org/apache/tomcat/embed/tomcat-embed-core/9.0.37/tomcat-embed-core-9.0.37.jar = 1611754795520
+/home/runner/.m2/repository/org/glassfish/jakarta.el/3.0.3/jakarta.el-3.0.3.jar = 1611754795352
+/home/runner/.m2/repository/org/apache/tomcat/embed/tomcat-embed-websocket/9.0.37/tomcat-embed-websocket-9.0.37.jar = 1611754795344
+/home/runner/.m2/repository/org/springframework/spring-web/5.2.8.RELEASE/spring-web-5.2.8.RELEASE.jar = 1611754795088
+/home/runner/.m2/repository/org/springframework/spring-beans/5.2.8.RELEASE/spring-beans-5.2.8.RELEASE.jar = 1611754790132
+/home/runner/.m2/repository/org/springframework/spring-webmvc/5.2.8.RELEASE/spring-webmvc-5.2.8.RELEASE.jar = 1611754790164
+/home/runner/.m2/repository/org/springframework/spring-aop/5.2.8.RELEASE/spring-aop-5.2.8.RELEASE.jar = 1611754790116
+/home/runner/.m2/repository/org/springframework/spring-context/5.2.8.RELEASE/spring-context-5.2.8.RELEASE.jar = 1611754790296
+/home/runner/.m2/repository/org/springframework/spring-expression/5.2.8.RELEASE/spring-expression-5.2.8.RELEASE.jar = 1611754790224
+/home/runner/.m2/repository/jakarta/xml/bind/jakarta.xml.bind-api/2.3.3/jakarta.xml.bind-api-2.3.3.jar = 1611754795316
+/home/runner/.m2/repository/jakarta/activation/jakarta.activation-api/1.2.2/jakarta.activation-api-1.2.2.jar = 1611754795328
+/home/runner/.m2/repository/org/springframework/spring-core/5.2.8.RELEASE/spring-core-5.2.8.RELEASE.jar = 1611754790428
+/home/runner/.m2/repository/org/springframework/spring-jcl/5.2.8.RELEASE/spring-jcl-5.2.8.RELEASE.jar = 1611754790344
+/home/runner/.m2/repository/org/slf4j/slf4j-api/1.7.30/slf4j-api-1.7.30.jar = 1611754795336
+/home/runner/.m2/repository/com/flipkart/zjsonpatch/zjsonpatch/0.4.11/zjsonpatch-0.4.11.jar = 1611754795352
+/home/runner/.m2/repository/com/fasterxml/jackson/core/jackson-databind/2.11.2/jackson-databind-2.11.2.jar = 1611754795620
+/home/runner/.m2/repository/com/fasterxml/jackson/core/jackson-core/2.11.2/jackson-core-2.11.2.jar = 1611754795488
+/home/runner/.m2/repository/org/apache/commons/commons-collections4/4.2/commons-collections4-4.2.jar = 1611754795516
+/home/runner/.m2/repository/com/github/bohnman/squiggly-filter-jackson/1.3.18/squiggly-filter-jackson-1.3.18.jar = 1611754795432
+/home/runner/.m2/repository/org/antlr/antlr4-runtime/4.6/antlr4-runtime-4.6.jar = 1611754795532
+/home/runner/.m2/repository/org/apache/commons/commons-lang3/3.10/commons-lang3-3.10.jar = 1611754795656
+/home/runner/.m2/repository/com/google/guava/guava/19.0/guava-19.0.jar = 1611754795752
+/home/runner/.m2/repository/commons-beanutils/commons-beanutils/1.9.3/commons-beanutils-1.9.3.jar = 1611754795628
+/home/runner/.m2/repository/commons-logging/commons-logging/1.2/commons-logging-1.2.jar = 1611754795556
+/home/runner/.m2/repository/commons-collections/commons-collections/3.2.2/commons-collections-3.2.2.jar = 1611754795704
+/home/runner/.m2/repository/net/jcip/jcip-annotations/1.0/jcip-annotations-1.0.jar = 1611754795644
+/home/runner/.m2/repository/com/fasterxml/jackson/dataformat/jackson-dataformat-xml/2.11.1/jackson-dataformat-xml-2.11.1.jar = 1611754795664
+/home/runner/.m2/repository/com/fasterxml/jackson/core/jackson-annotations/2.11.2/jackson-annotations-2.11.2.jar = 1611754795692
+/home/runner/.m2/repository/com/fasterxml/jackson/module/jackson-module-jaxb-annotations/2.11.2/jackson-module-jaxb-annotations-2.11.2.jar = 1611754795696
+/home/runner/.m2/repository/org/codehaus/woodstox/stax2-api/4.2.1/stax2-api-4.2.1.jar = 1611754795724
+/home/runner/.m2/repository/com/fasterxml/woodstox/woodstox-core/6.2.1/woodstox-core-6.2.1.jar = 1611754795804
+/home/runner/.m2/repository/org/json/json/20160212/json-20160212.jar = 1611754795724
+/home/runner/.m2/repository/com/vaadin/external/google/android-json/0.0.20131108.vaadin1/android-json-0.0.20131108.vaadin1.jar = 1611754795740
+/home/runner/work/JSON-tools/JSON-tools/src/main/java = 1611754753000
+/home/runner/work/JSON-tools/JSON-tools/target/site/apidocs/type-search-index.js = 1611754813076
+/home/runner/work/JSON-tools/JSON-tools/target/site/apidocs/package-search-index.js = 1611754813072
+/home/runner/work/JSON-tools/JSON-tools/target/site/apidocs/stylesheet.css = 1611754813112
+/home/runner/work/JSON-tools/JSON-tools/target/site/apidocs/allpackages-index.html = 1611754813092
+/home/runner/work/JSON-tools/JSON-tools/target/site/apidocs/element-list = 1611754812916
+/home/runner/work/JSON-tools/JSON-tools/target/site/apidocs/allclasses.html = 1611754813096
+/home/runner/work/JSON-tools/JSON-tools/target/site/apidocs/member-search-index.zip = 1611754813076
+/home/runner/work/JSON-tools/JSON-tools/target/site/apidocs/type-search-index.zip = 1611754813076
+/home/runner/work/JSON-tools/JSON-tools/target/site/apidocs/script.js = 1611754813112
+/home/runner/work/JSON-tools/JSON-tools/target/site/apidocs/index.html = 1611754813104
+/home/runner/work/JSON-tools/JSON-tools/target/site/apidocs/package-search-index.zip = 1611754813076
+/home/runner/work/JSON-tools/JSON-tools/target/site/apidocs/search.js = 1611754813120
+/home/runner/work/JSON-tools/JSON-tools/target/site/apidocs/member-search-index.js = 1611754813076
+/home/runner/work/JSON-tools/JSON-tools/target/site/apidocs/overview-summary.html = 1611754813104
+/home/runner/work/JSON-tools/JSON-tools/target/site/apidocs/index-all.html = 1611754813080
+/home/runner/work/JSON-tools/JSON-tools/target/site/apidocs/constant-values.html = 1611754812960
+/home/runner/work/JSON-tools/JSON-tools/target/site/apidocs/deprecated-list.html = 1611754813096
+/home/runner/work/JSON-tools/JSON-tools/target/site/apidocs/help-doc.html = 1611754813108
+/home/runner/work/JSON-tools/JSON-tools/target/site/apidocs/overview-tree.html = 1611754813040
+/home/runner/work/JSON-tools/JSON-tools/target/site/apidocs/allclasses-index.html = 1611754813088
