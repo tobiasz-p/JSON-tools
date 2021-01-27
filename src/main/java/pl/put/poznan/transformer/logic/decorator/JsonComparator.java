@@ -23,14 +23,15 @@ public class JsonComparator extends JsonDecorator{
     @Override
     public String transform() throws JsonProcessingException {
         try{
-            JsonPrettifier jsonPrettifier = new JsonPrettifier(this.input);
+            //JsonPrettifier jsonPrettifier = new JsonPrettifier(this.input);
             jsonArray = split();
             EnumSet<DiffFlags> flags = DiffFlags.dontNormalizeOpIntoMoveAndCopy().clone();
             JsonNode patch = JsonDiff.asJson(jsonArray.get(0), jsonArray.get(1), flags);
             String diffs = patch.toString();
             String output = "Your JSONs:" +
                             "\n-----------------------------------------------------------\n" +
-                            jsonPrettifier.transform() +
+                            //jsonPrettifier.transform() +
+                            this.input +
                             "\n-----------------------------------------------------------\n" +
                             "\nDifferences:\n" +
                             diffs;

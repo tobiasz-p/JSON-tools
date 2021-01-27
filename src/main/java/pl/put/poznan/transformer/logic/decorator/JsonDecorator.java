@@ -8,10 +8,11 @@ import pl.put.poznan.transformer.logic.Json;
 import java.io.IOException;
 
 public abstract class JsonDecorator extends Json {
+    protected Json json;
     protected JsonNode jsonNode;
     protected String input;
 
-    public JsonDecorator (String input) throws JsonProcessingException {
+    public JsonDecorator (String input) {
             this.input = input;
             try {
                 ObjectMapper objectMapper = new ObjectMapper();
@@ -20,6 +21,9 @@ public abstract class JsonDecorator extends Json {
                 e.printStackTrace();
             }
         }
+
+    protected JsonDecorator() {
+    }
 
     @Override
     public abstract String transform() throws JsonProcessingException;
