@@ -1,22 +1,24 @@
 package pl.put.poznan.transformer.logic;
 
+import com.fasterxml.jackson.core.JsonProcessingException;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.fasterxml.jackson.databind.SerializationFeature;
 import org.json.JSONObject;
 import org.json.XML;
+import pl.put.poznan.transformer.logic.decorator.JsonDecorator;
 
 import java.io.IOException;
 
-public class XmlToJsonConverter {
-    private String xml;
-    
+public class XmlToJsonConverter extends JsonDecorator {
+
     public XmlToJsonConverter(String input) {
-        this.xml = input;
+        //super(input);
+        this.input = input;
     }
 
-    public String transform() throws IOException {
+    public String transform() throws JsonProcessingException {
 
-        JSONObject jsonObject = XML.toJSONObject(xml);
+        JSONObject jsonObject = XML.toJSONObject(input);
         jsonObject = (JSONObject) jsonObject.get(jsonObject.keys().next()); // "remove" root tag
         ObjectMapper mapper = new ObjectMapper();
         mapper.enable(SerializationFeature.INDENT_OUTPUT);

@@ -4,13 +4,12 @@ import com.fasterxml.jackson.core.JsonProcessingException;
 import com.fasterxml.jackson.databind.JsonNode;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.fasterxml.jackson.dataformat.xml.XmlMapper;
+import pl.put.poznan.transformer.logic.decorator.JsonDecorator;
 
-public class JsonToXmlConverter {
-    private JsonNode jsonNode;
+public class JsonToXmlConverter extends JsonDecorator {
 
-
-    public JsonToXmlConverter(String input) throws JsonProcessingException {
-        this.jsonNode = new ObjectMapper().readTree(input);
+    public JsonToXmlConverter(String input) {
+        super(input);
     }
 
     public String transform() throws JsonProcessingException {
