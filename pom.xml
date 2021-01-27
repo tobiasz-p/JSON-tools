@@ -13,7 +13,7 @@
 
     <groupId>pl.put.poznan</groupId>
     <artifactId>JSON-tools</artifactId>
-    <version>0.4.0</version>
+    <version>0.4.1</version>
 
 	<properties>
         <java.version>11</java.version>
@@ -66,6 +66,12 @@
             <groupId>org.json</groupId>
             <artifactId>json</artifactId>
             <version>20160212</version>
+        </dependency>
+        <dependency>
+            <groupId>com.vaadin.external.google</groupId>
+            <artifactId>android-json</artifactId>
+            <version>0.0.20131108.vaadin1</version>
+            <scope>compile</scope>
         </dependency>
     </dependencies>
 

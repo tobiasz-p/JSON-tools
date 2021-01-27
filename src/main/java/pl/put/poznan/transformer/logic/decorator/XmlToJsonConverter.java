@@ -5,14 +5,10 @@ import com.fasterxml.jackson.databind.ObjectMapper;
 import com.fasterxml.jackson.databind.SerializationFeature;
 import org.json.JSONObject;
 import org.json.XML;
-import pl.put.poznan.transformer.logic.decorator.JsonDecorator;
-
-import java.io.IOException;
 
 public class XmlToJsonConverter extends JsonDecorator {
 
     public XmlToJsonConverter(String input) {
-        //super(input);
         this.input = input;
     }
 
