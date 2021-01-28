@@ -4,26 +4,10 @@ import com.fasterxml.jackson.core.JsonProcessingException;
 import org.junit.jupiter.api.Test;
 
 import static org.assertj.core.api.Assertions.assertThat;
-import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.junit.jupiter.api.Assertions.fail;
-import static org.mockito.Mockito.*;
 
 
 class JsonMinifierTest   {
-
-    @Test
-    void  minifyMockTest() throws JsonProcessingException {
-
-        JsonDecorator minifierMock = mock(JsonMinifier.class);
-
-        when(minifierMock.transform()).thenReturn("[{\"name\":\"Json\",\"age\":14,\"features:\":\"none\"}]");
-
-
-        String output = minifierMock.transform();
-        verify(minifierMock).transform();
-        assertEquals(output, "[{\"name\":\"Json\",\"age\":14,\"features:\":\"none\"}]");
-    }
-
 
 
     @Test

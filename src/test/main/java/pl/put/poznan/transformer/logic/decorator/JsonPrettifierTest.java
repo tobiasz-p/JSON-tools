@@ -1,13 +1,33 @@
 package pl.put.poznan.transformer.logic.decorator;
 
 import com.fasterxml.jackson.core.JsonProcessingException;
+import com.fasterxml.jackson.databind.JsonNode;
 import org.junit.jupiter.api.Test;
 
 import static org.assertj.core.api.Assertions.assertThat;
 import static org.junit.jupiter.api.Assertions.fail;
+import static org.mockito.Mockito.*;
 
 
 class JsonPrettifierTest   {
+
+     @Test
+     void  prettifyMockTest() throws JsonProcessingException {
+         String expected = "[ {\n" +
+                 "  \"name\" : \"Json\",\n" +
+                 "  \"age\" : 14,\n" +
+                 "  \"features:\" : \"none\"\n" +
+                 "} ]";
+
+         JsonNode jsonNodeMock = mock(JsonNode.class);
+         when(jsonNodeMock.toPrettyString()).thenReturn(expected);
+
+         JsonDecorator jsonPrettifier = new JsonPrettifier("[{\"name\":\"Json\",\"age\":14,\"features:\":\"none\"}]");
+         jsonPrettifier.jsonNode = jsonNodeMock;
+
+         assertThat(expected).isEqualToNormalizingNewlines(jsonPrettifier.transform());
+         verify(jsonNodeMock).toPrettyString();
+     }
 
      @Test
      void  prettifyTest1()   {
