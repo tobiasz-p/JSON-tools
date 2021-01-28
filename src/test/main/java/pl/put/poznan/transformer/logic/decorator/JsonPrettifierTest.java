@@ -2,15 +2,12 @@ package pl.put.poznan.transformer.logic.decorator;
 
 import com.fasterxml.jackson.core.JsonProcessingException;
 import org.junit.jupiter.api.Test;
-import pl.put.poznan.transformer.logic.decorator.JsonDecorator;
-import pl.put.poznan.transformer.logic.decorator.JsonMinifier;
-import pl.put.poznan.transformer.logic.decorator.JsonPrettifier;
 
 import static org.assertj.core.api.Assertions.assertThat;
 import static org.junit.jupiter.api.Assertions.fail;
 
 
- class JsonPrettifierTest   {
+class JsonPrettifierTest   {
 
      @Test
      void  prettifyTest1()   {

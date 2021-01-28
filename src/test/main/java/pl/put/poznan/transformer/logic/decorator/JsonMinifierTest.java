@@ -2,9 +2,6 @@ package pl.put.poznan.transformer.logic.decorator;
 
 import com.fasterxml.jackson.core.JsonProcessingException;
 import org.junit.jupiter.api.Test;
-import pl.put.poznan.transformer.logic.decorator.JsonComparator;
-import pl.put.poznan.transformer.logic.decorator.JsonDecorator;
-import pl.put.poznan.transformer.logic.decorator.JsonMinifier;
 
 import static org.assertj.core.api.Assertions.assertThat;
 import static org.junit.jupiter.api.Assertions.assertEquals;
@@ -17,26 +14,13 @@ class JsonMinifierTest   {
     @Test
     void  minifyMockTest() throws JsonProcessingException {
 
-        JsonNodeInterface jsonNodeMock = mock(JsonNodeInterface.class);
+        JsonDecorator minifierMock = mock(JsonMinifier.class);
 
-        when(jsonNodeMock.toString("[ \n" +
-                "\t{\n" +
-                "  \"name\" : \"Json\",\n" +
-                "  \"age\" : 14,\n" +
-                "  \"features:\" : \"none\"\n" +
-                "\t}\n" +
-                "]")).thenReturn("[{\"name\":\"Json\",\"age\":14,\"features:\":\"none\"}]");
+        when(minifierMock.transform()).thenReturn("[{\"name\":\"Json\",\"age\":14,\"features:\":\"none\"}]");
 
-        JsonMinifier minifier = new JsonMinifier("[ \n" +
-                "\t{\n" +
-                "  \"name\" : \"Json\",\n" +
-                "  \"age\" : 14,\n" +
-                "  \"features:\" : \"none\"\n" +
-                "\t}\n" +
-                "]");
 
-        String output = minifier.transform();
-        verify(jsonNodeMock).toString();
+        String output = minifierMock.transform();
+        verify(minifierMock).transform();
         assertEquals(output, "[{\"name\":\"Json\",\"age\":14,\"features:\":\"none\"}]");
     }
 

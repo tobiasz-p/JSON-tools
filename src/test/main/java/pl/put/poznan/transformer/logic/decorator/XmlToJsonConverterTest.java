@@ -26,6 +26,7 @@ class XmlToJsonConverterTest {
         }
     }
 
+
     @Test
     void  xmlToJsonTest2()   {
         String expected = "{\n" +
@@ -53,6 +54,7 @@ class XmlToJsonConverterTest {
             fail();
         }
     }
+
 
     @Test
     void  xmlToJsonTest3()   {
@@ -94,6 +96,7 @@ class XmlToJsonConverterTest {
         }
     }
 
+
     @Test
     void  xmlToJsonTest4()   {
         String expected = "{\n" +
@@ -128,6 +131,7 @@ class XmlToJsonConverterTest {
             fail();
         }
     }
+
 
     @Test
     void  xmlToJsonTest5()   {
