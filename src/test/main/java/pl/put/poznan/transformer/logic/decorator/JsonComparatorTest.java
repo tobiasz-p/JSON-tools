@@ -1,4 +1,4 @@
-package main.java.pl.put.poznan.transformer.logic.decorator;
+package pl.put.poznan.transformer.logic.decorator;
 
 import com.fasterxml.jackson.core.JsonProcessingException;
 import com.fasterxml.jackson.databind.JsonNode;
