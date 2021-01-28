@@ -9,8 +9,7 @@ import pl.put.poznan.transformer.logic.decorator.JsonMinifier;
 import static org.assertj.core.api.Assertions.assertThat;
 import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.junit.jupiter.api.Assertions.fail;
-import static org.mockito.Mockito.mock;
-import static org.mockito.Mockito.when;
+import static org.mockito.Mockito.*;
 
 
 class JsonMinifierTest   {
@@ -36,7 +35,9 @@ class JsonMinifierTest   {
                 "\t}\n" +
                 "]");
 
-        assertEquals(minifier.transform(), "[{\"name\":\"Json\",\"age\":14,\"features:\":\"none\"}]");
+        String output = minifier.transform();
+        verify(jsonNodeMock).toString();
+        assertEquals(output, "[{\"name\":\"Json\",\"age\":14,\"features:\":\"none\"}]");
     }
 
 
