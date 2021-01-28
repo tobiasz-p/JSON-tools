@@ -41,8 +41,10 @@
       <point x="-35.75" y="27.0" />
     </edge>
   </edges>
-  <settings layout="Hierarchic Group" zoom="1.0" x="165.5" y="79.0" />
-  <SelectedNodes />
+  <settings layout="Hierarchic Group" zoom="1.0" x="271.5" y="199.0" />
+  <SelectedNodes>
+    <node>pl.put.poznan.transformer.logic.decorator.JsonComparator</node>
+  </SelectedNodes>
   <Categories>
     <Category>Fields</Category>
     <Category>Constructors</Category>

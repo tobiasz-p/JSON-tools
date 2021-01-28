@@ -6,12 +6,25 @@ import com.fasterxml.jackson.databind.SerializationFeature;
 import org.json.JSONObject;
 import org.json.XML;
 
+/**
+ * XmlToJsonConverter class converts XML input into JSON output
+ */
 public class XmlToJsonConverter extends JsonDecorator {
 
+    /**
+     * XmlToJsonConverter class constructor
+     * @param input input JSON string
+     */
     public XmlToJsonConverter(String input) {
         this.input = input;
     }
 
+    /**
+     * Converts XML input into JSON output
+     * @return JSON output
+     * @throws JsonProcessingException input XML is invalid
+     */
+    @Override
     public String transform() throws JsonProcessingException {
 
         JSONObject jsonObject = XML.toJSONObject(input);
