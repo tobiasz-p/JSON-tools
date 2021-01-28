@@ -7,11 +7,40 @@ import pl.put.poznan.transformer.logic.decorator.JsonDecorator;
 import pl.put.poznan.transformer.logic.decorator.JsonMinifier;
 
 import static org.assertj.core.api.Assertions.assertThat;
+import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.junit.jupiter.api.Assertions.fail;
+import static org.mockito.Mockito.mock;
+import static org.mockito.Mockito.when;
 
 
 class JsonMinifierTest   {
-    
+
+    @Test
+    void  minifyMockTest() throws JsonProcessingException {
+
+        JsonNodeInterface jsonNodeMock = mock(JsonNodeInterface.class);
+
+        when(jsonNodeMock.toString("[ \n" +
+                "\t{\n" +
+                "  \"name\" : \"Json\",\n" +
+                "  \"age\" : 14,\n" +
+                "  \"features:\" : \"none\"\n" +
+                "\t}\n" +
+                "]")).thenReturn("[{\"name\":\"Json\",\"age\":14,\"features:\":\"none\"}]");
+
+        JsonMinifier minifier = new JsonMinifier("[ \n" +
+                "\t{\n" +
+                "  \"name\" : \"Json\",\n" +
+                "  \"age\" : 14,\n" +
+                "  \"features:\" : \"none\"\n" +
+                "\t}\n" +
+                "]");
+
+        assertEquals(minifier.transform(), "[{\"name\":\"Json\",\"age\":14,\"features:\":\"none\"}]");
+    }
+
+
+
     @Test
     void  minifyTest1()   {
         String expected = "[{\"name\":\"Json\"}]";
@@ -190,6 +219,8 @@ class JsonMinifierTest   {
             fail();
         }
     }
+
+
 
 
 }
